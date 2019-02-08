@@ -24,7 +24,7 @@ src/www/:
         --fragment "<footer>" --count 1 --exact
         --fragment "TODO" --count 0 --exact
 # --> check the number of commits beyond a threshold
---commits 10
+--commits 14
 # --> check that the linter executes and produces 0 lines of output
 --command "htmlhint src/www/index.html" --executes
 --command "htmlhint src/www/index.html" --count 1 --exact
