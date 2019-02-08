@@ -1,0 +1,31 @@
+---
+name: cmpsc-302-spring-2019-practical3
+break: true
+indent: 4
+---
+# --> check the source code for various characteristics
+# note that without an "--exact" the check is an "at least"
+src/www/:
+    index.html:
+        --fragment "<title>Share Your Travels</title>" --count 1 --exact
+        --fragment "<h1>Share Your Travels</h1>" --count 1 --exact
+        --fragment "<h2>Learn More About Our Company</h2>" --count 1 --exact
+        --fragment "a href" --count 8 --exact
+        --fragment "h3" --count 8 --exact
+        --fragment "about.html" --count 4 --exact
+        --fragment "software.html" --count 4 --exact
+        --fragment "_blank" --count 4 --exact
+        --fragment "<ul>" --count 2 --exact
+        --fragment "<ol>" --count 2 --exact
+        --fragment "em em-" --count 2 --exact
+        --fragment "github.css" --count 1 --exact
+        --fragment "<html>" --count 1 --exact
+        --fragment "<body>" --count 1 --exact
+        --fragment "<footer>" --count 1 --exact
+        --fragment "TODO" --count 0 --exact
+# --> check the number of commits beyond a threshold
+--commits 10
+# --> check that the linter executes and produces 0 lines of output
+--command "htmlhint src/www/index.html" --executes
+--command "htmlhint src/www/index.html" --count 1 --exact
+--command "htmlhint src/www/index.html" --fragment "no errors found" --count 1 --exact
