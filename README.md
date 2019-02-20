@@ -169,9 +169,11 @@ developed for the following software and versions:
 
 ## Problems
 
+<!-- NOTE: This URL is not standard and needed because I made a mistake -->
+
 If you have found a problem with this assignment's provided source code, then
 you can go to the [Computer Science 302 Practical 3
-Starter](https://github.com/Allegheny-Computer-Science-302-S2019/cs302-S2019-practical3-starter)
+Starter](https://github.com/Allegheny-Computer-Science-302-S2019/cs302-S2019-practical3-starter-final)
 repository and create an issue by clicking the "Issues" tab and then clicking
 the green "New Issue" button. If you have found a problem with the [GatorGrader
 tool](https://github.com/GatorEducator/gatorgrader) and the way that it checks
